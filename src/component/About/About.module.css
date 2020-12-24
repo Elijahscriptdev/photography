@@ -1,0 +1,97 @@
+.about {
+  background-image: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1608810249/cody-silver-idKrCC0QeE4-unsplash_qiheey.jpg"); /* The image used */
+  background-color: #cccccc;
+  height: 100vh;
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: var(--background-color-light);
+}
+
+.about_container {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  max-width: 700px;
+}
+
+.about_content h2 {
+  font-size: 2.8rem;
+  margin-top: 30px;
+  color: var(--background-color-light);
+}
+
+.about_content p {
+  font-size: 1rem;
+  line-height: 2rem;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  margin-left: 6px;
+}
+
+.about_btn button {
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  transition: 250ms ease-in-out;
+  color: var(--text-color);
+  background-color: var(--background-color-light);
+}
+
+.about_btn button:hover {
+  background-color: var(--text-color);
+  color: var(--background-color-light);
+  border: none;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 800px) {
+  .about {
+    height: 80vh;
+  }
+
+  .about_container {
+    padding: 40px;
+    height: 60vh;
+    max-width: 700px;
+  }
+
+  .about_content h2 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+
+  .about_content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about {
+    height: 80vh;
+  }
+
+  .about_container {
+    padding: 10px 40px;
+    height: 60vh;
+    max-width: 700px;
+  }
+
+  .about_content h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+
+  .about_content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+}
