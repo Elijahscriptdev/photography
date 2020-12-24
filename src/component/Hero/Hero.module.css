@@ -1,0 +1,13 @@
+.hero_image {
+    background-image: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1608777143/alexander-andrews-A545KXf87jE-unsplash_dn6h5h.jpg"); /* The image used */
+    background-color: #cccccc;
+    height: 150vh;
+    width: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.hero_image .hero_title {
+    color: var(--background-color-light);
+}
