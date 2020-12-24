@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import About from '../component/About/About'
+import Contact from '../component/Contact/Contact'
 import Hero from '../component/Hero/Hero'
 import Layout from '../component/Layout/Layout'
 import Portfolio from '../component/Portfolio/Portfolio'
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Portfolio />
       <About />
+      <Contact />
     </Layout>
   )
 }

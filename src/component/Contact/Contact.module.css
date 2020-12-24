@@ -1,0 +1,39 @@
+.contact {
+  background-color: #e6e6e6;
+  padding: 60px;
+  width: 100%;
+}
+
+.contact_container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.container_input input {
+  padding: 20px;
+  width: 60vw;
+  margin-top: 5px;
+}
+
+.container_textarea textarea {
+  padding: 20px;
+  width: 60vw;
+  margin-top: 5px;
+}
+
+.contact_btn input {
+  padding: 20px;
+  width: 60vw;
+  background-color: var(--text-color);
+  color: #fff;
+}
+
+.contact_btn input:hover {
+  background-color: var(--text-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
