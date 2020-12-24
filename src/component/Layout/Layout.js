@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../Footer/Footer";
 import styles from "./Layout.module.css";
 
 const Layout = ({ children, title = "Photography" }) => {
@@ -15,7 +16,7 @@ const Layout = ({ children, title = "Photography" }) => {
 
       <main className={styles.main}>{children}</main>
 
-      <footer className={styles.footer}>Elijah-Dev 2020</footer>
+      <footer className={styles.footer}><Footer /></footer>
     </div>
   );
 };

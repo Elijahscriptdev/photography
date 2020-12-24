@@ -37,3 +37,39 @@
   border: none;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 500px) {
+  .contact_container {
+    /* margin: 0 auto; */
+    /* padding: 10px; */
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .container_input input {
+    padding: 15px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .container_textarea textarea {
+    padding: 15px;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .contact_btn input {
+    padding: 15px;
+    width:100%;
+    background-color: var(--text-color);
+    color: #fff;
+  }
+
+  .contact {
+    background-color: #e6e6e6;
+    padding: 40px 10px;
+    margin: 0;
+    width: 100%;
+  }
+}
