@@ -1,0 +1,89 @@
+.porfolio_container {
+  padding: 70px 40px;
+}
+
+.first_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.portfolio_Heading_container h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.second_grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  padding: 30px 10px;
+  margin: 0;
+}
+
+.second_grid > div {
+  margin: 0;
+}
+
+.second_grid img {
+  width: 100%;
+}
+
+.portfolio_btn {
+  text-align: center;
+}
+
+.portfolio_btn button {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  transition: 250ms ease-in-out;
+}
+
+.portfolio_btn button:hover {
+  background-color: var(--text-color);
+  color: #fff;
+  border: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .second_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px 10px;
+    margin: 0;
+  }
+
+  .first_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .portfolio_Heading_container h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .second_grid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px 10px;
+    margin: 0;
+  }
+
+  .first_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .portfolio_Heading_container h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
