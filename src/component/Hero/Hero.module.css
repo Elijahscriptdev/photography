@@ -1,13 +1,127 @@
 .hero_image {
-    background-image: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1608777143/alexander-andrews-A545KXf87jE-unsplash_dn6h5h.jpg"); /* The image used */
-    background-color: #cccccc;
-    height: 150vh;
-    width: 100%;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url("https://res.cloudinary.com/elijjaaahhhh/image/upload/v1608777143/alexander-andrews-A545KXf87jE-unsplash_dn6h5h.jpg"); /* The image used */
+  background-color: #cccccc;
+  height: 120vh;
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.hero_image .hero_title {
-    color: var(--background-color-light);
+.hero_image .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 30px 0 auto;
+  padding-left: 60px;
+}
+
+.container h1 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  color: var(--background-color-light);
+}
+
+.container h3 {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  margin-left: 6px;
+}
+
+.social_icons {
+  display: flex;
+  flex-direction: column;
+  color: var(--background-color-light);
+}
+
+.social_icons a{
+    margin: 5px 0;
+  }
+
+/* @media only screen and (max-width: 1500px) {
+  .container h1 {
+    font-size: 6rem;
+  }
+
+  .hero_image {
+    height: 120vh;
+    width: 100%;
+  }
+
+  .hero_image .container {
+    height: 120vh;
+    justify-items: center;
+    margin: 0 auto;
+  }
+} */
+
+@media only screen and (max-width: 1200px) {
+  .container h1 {
+    font-size: 3.4rem;
+  }
+
+  .hero_image {
+    height: 120vh;
+    width: 100%;
+  }
+
+  .hero_image .container {
+    height: 120vh;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container h1 {
+    font-size: 2.7rem;
+  }
+
+  .container h3 {
+    font-size: 1rem;
+  }
+
+  .hero_image {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .hero_image .container {
+    height: 90vh;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero_image {
+    height: 60vh;
+    width: 100%;
+  }
+
+  .hero_image .container {
+    height: 60vh;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .container h1 {
+    font-size: 1.9rem;
+  }
+
+  .container h3 {
+    font-size: .7rem;
+  }
 }
