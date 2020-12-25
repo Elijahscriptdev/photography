@@ -1,0 +1,37 @@
+.navbar {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: var(--background-color-light);
+  padding: 30px 40px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.navbar .navbar_menu {
+  position: absolute;
+  right: 30px;
+  padding: 5px 6px;
+  background: var(--text-color);
+  justify-self: center;
+  align-items: center;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.navbar .navbar_menu span {
+  margin-left: 3px;
+  font-weight: 500;
+}
+
+.navbar .navbar_logo {
+  position: absolute;
+  left: 30px;
+  font-size: 20px;
+}
