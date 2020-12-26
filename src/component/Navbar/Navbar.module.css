@@ -1,37 +1,69 @@
 .navbar {
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   color: var(--background-color-light);
   padding: 30px 40px;
   width: 100%;
   cursor: pointer;
 }
 
-.navbar .navbar_menu {
-  position: absolute;
-  right: 30px;
-  padding: 5px 6px;
-  background: var(--text-color);
-  justify-self: center;
-  align-items: center;
-  width: 90px;
+.navbar_container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+
+.nav_menu {
+  background-color: #0c0c0c;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+  z-index: 1;
 }
 
-.navbar .navbar_menu span {
-  margin-left: 3px;
-  font-weight: 500;
+.active {
+  background-color: #0c0c0c;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: 850ms;
+  z-index: 1;
+  transform-origin: 350ms;
+  padding: 35px 40px;
 }
 
-.navbar .navbar_logo {
-  position: absolute;
-  left: 30px;
-  font-size: 20px;
+.active a {
+  margin: 10px 0;
+}
+
+.active p {
+  font-size: 0.7rem;
+  margin-top: 20px;
+  color: #878687;
+}
+
+.menu_icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.menu_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.menu_icons .navigation {
+  color: var(--text-color);
+  font-weight: bold;
 }
