@@ -7,7 +7,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 
 const Hero = () => {
   return (
-    <div className={styles.hero_image}>
+    <div className={styles.hero_image} id="home">
       <div className={styles.container}>
         <div>
             <h3>welcome to snapshots</h3>

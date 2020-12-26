@@ -6,7 +6,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 
 const Footer = () => {
   return (
-    <div className={styles.footer_overall}>
+    <div className={styles.footer_overall} id="links">
       <footer className={styles.footer}>
         <div className={styles.footer_container}>
           <div className={styles.footer_head}>

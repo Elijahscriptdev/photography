@@ -2,7 +2,7 @@ import styles from "./Portfolio.module.css";
 
 const Portfolio = () => {
   return (
-    <div className={styles.porfolio_container}>
+    <div className={styles.porfolio_container} id="portfolio">
       <div className={styles.first_grid}>
         <div className={styles.portfolio_Heading_container}>
           <h2>With my camera, I capture daily life</h2>

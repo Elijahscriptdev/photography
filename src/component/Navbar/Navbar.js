@@ -28,14 +28,26 @@ const Navbar = () => {
           <div className={styles.active}>
             <div className={styles.menu_icons} onClick={handleClick}>
               <span className={styles.navigation}> NAVIGATION </span>
-              {click ? <CloseIcon /> : <MenuIcon />}
+              {click && <CloseIcon />}
             </div>
-            <a href='#home'>Home</a>
-            <a href='#about'>About</a>
-            <a href='#portfolio'>Porfolio</a>
-            <a href='#contact'>Contact Us</a>
-            <a href='#clients'>Clients</a>
-            <a href='#links'>Quick Links</a>
+            <a href='#home' onClick={closeMobileMenu}>
+              Home
+            </a>
+            <a href='#about' onClick={closeMobileMenu}>
+              About
+            </a>
+            <a href='#portfolio' onClick={closeMobileMenu}>
+              Porfolio
+            </a>
+            <a href='#contact' onClick={closeMobileMenu}>
+              Contact Us
+            </a>
+            <a href='#clients' onClick={closeMobileMenu}>
+              Clients
+            </a>
+            <a href='#links' onClick={closeMobileMenu}>
+              Quick Links
+            </a>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
               id incidunt quisquam voluptates ipsum amet vel minus mollitia
